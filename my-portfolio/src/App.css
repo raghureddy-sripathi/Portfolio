@@ -1,0 +1,192 @@
+/* Base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  color: white;
+  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Main App wrapper */
+.App {
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80');
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.resume-button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #008c9e;
+}
+
+/* Section styling */
+section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+section h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #00bcd4;
+}
+
+/* Project list */
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+section ul li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Scroll animation */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Contact Section */
+footer.contact {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  border-top: 2px solid #00bcd4;
+}
+
+footer.contact h2 {
+  font-size: 1.8rem;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+footer.contact p {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+footer.contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+footer.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .resume-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  section ul li {
+    font-size: 1rem;
+  }
+}
