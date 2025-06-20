@@ -33,7 +33,13 @@ function App() {
         <div className="overlay">
           <h1>Raghavender Reddy Sripathi</h1>
           <p>Software & Data Engineer | Python • C++ • SQL • Machine Learning</p>
-          <a className="resume-button" href="/Raghavender_Reddy_sripathi_us2.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+          <a
+          className="resume-button"
+          href="/Raghavender_Reddy_sripathi_us2.pdf"
+          download
+          >
+          View Resume
+          </a>
 
         </div>
       </header>
