@@ -35,8 +35,9 @@ function App() {
           <p>Software & Data Engineer | Python • C++ • SQL • Machine Learning</p>
           <a
           className="resume-button"
-          href="/Raghavender_Reddy_sripathi_us2.pdf"
-          download
+          href={`${process.env.PUBLIC_URL}/Raghavender_Reddy_sripathi_us2.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
           >
           View Resume
           </a>
