@@ -41,8 +41,15 @@ function App() {
           >
           View Resume
           </a>
-
+          
+          
         </div>
+        <a href="#about-me" className="scroll-indicator">
+        ⬇️ Scroll Down
+        
+
+        </a>
+
       </header>
 
       <main>
