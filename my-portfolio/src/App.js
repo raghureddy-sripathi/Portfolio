@@ -35,7 +35,7 @@ function App() {
           <p>Software & Data Engineer | Python • C++ • SQL • Machine Learning</p>
           <a
           className="resume-button"
-          href="https://raghureddy-sripathi.github.io/Portfolio/Raghavender_Reddy_sripathi_us2.pdf"
+          href="C:\Users\ADMIN\OneDrive\portfolio\"
           target="_blank"
           rel="noopener noreferrer"
           >
